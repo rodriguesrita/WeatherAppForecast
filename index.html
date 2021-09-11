@@ -46,6 +46,7 @@
                 id="city-input"
                 placeholder="Enter your city name"
                 style="width: 100%"
+                autocomplete="off"
               />
             </div>
             <div class="col-3">
@@ -63,7 +64,7 @@
           <div class="col-12">
             <div class="row">
               <div class="current">
-                <strong>Current state:</strong>
+                <strong><span id="cur-title">Current state:</span></strong>
                 <span id="description">...</span>
               </div>
             </div>
@@ -80,9 +81,8 @@
               </div>
               <div class="row">
                 <div class="col-4">
-                  <span id="cur-temp"
-                    >15<span id="cur-temp-symbol">º</span></span
-                  >
+                  <span id="cur-temp">15</span
+                  ><span id="cur-temp-symbol">º</span>
                 </div>
                 <div class="col-4">
                   <i class="fas fa-temperature-high"></i>Max:
@@ -105,14 +105,27 @@
           </div>
           <div class="weather-forecast" id="forecast"></div>
         </div>
-        <small
-          >Coded by <a href="https://github.com/rodriguesrita">ri_ta</a> color
-          scheme inspired by
-          <a
-            href="https://www.kicksonfire.com/wp-content/uploads/2021/03/Nike-Air-Max-Pre-Day-Liquid-Lime-1.jpg"
-            >these kicks.</a
-          ></small
-        >
+        <div class="row">
+          <div class="col-12">
+            <span id="date-footer"
+              >Last updated: <span id="date">...</span></span
+            >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <small>
+              <br />
+              Coded by
+              <a href="https://github.com/rodriguesrita">ri_ta</a> color scheme
+              inspired by
+              <a
+                href="https://www.kicksonfire.com/wp-content/uploads/2021/03/Nike-Air-Max-Pre-Day-Liquid-Lime-1.jpg"
+                >these kicks.</a
+              ></small
+            >
+          </div>
+        </div>
       </div>
     </div>
     <script src="src/script.js"></script>
